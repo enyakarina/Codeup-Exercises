@@ -1,23 +1,34 @@
 <?php
 
+$a = 4;
+$b = 2;
+
 function add($a, $b)
 {
     return $a + $b;
 }
+echo add($a, $b) . PHP_EOL;
 
 function subtract($a, $b)
 {
-    // Add code here
+    return $a - $b;
 }
+echo subtract($a, $b) . PHP_EOL;
 
 function multiply($a, $b)
 {
-    // Add code here
+    return $a * $b;
 }
+echo multiply($a, $b) . PHP_EOL;
 
 function divide($a, $b)
 {
-    // Add code here
+    return $a / $b;
 }
+echo divide($a, $b) . PHP_EOL; 
 
-// Add code to test your functions here
+function modulus($a, $b)
+{
+    return $a % $b;
+}
+echo modulus($a, $b) . PHP_EOL;
