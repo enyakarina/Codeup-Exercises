@@ -23,13 +23,19 @@ $books = array(
     )
 );
 
+echo "COOL BOOKS WRITTEN IN 1950 AND BEYOND: \n";
 foreach ($books as $book => $title) {
-    echo "==========\n";
-    echo "The title of the book is: {$book}\n";
-    foreach($title as $key => $value) {
-        echo "{$key} : {$value}\n";
+    if ($title['published'] > '1950') {
+        echo "==========\n";
+        echo "The title of the book is: {$book}\n";
+        foreach($title as $key => $value) {
+            echo "{$key} : {$value}\n";
+        }
     }
 }
+
+
+
 
 
 
