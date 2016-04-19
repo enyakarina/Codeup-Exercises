@@ -23,6 +23,13 @@ $books = array(
     )
 );
 
+foreach ($books as $book => $title) {
+    echo "==========\n";
+    echo "The title of the book is: {$book}\n";
+    foreach($title as $key => $value) {
+        echo "{$key} : {$value}\n";
+    }
+}
 
 
 
